@@ -19,7 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     dijkstrasocket.cpp \
-    dijkstraserver.cpp
+    dijkstraserver.cpp \
     grafo.cpp
 
 # Default rules for deployment.
@@ -31,5 +31,5 @@ QMAKE_CXXFLAGS += -std=gnu++11
 
 HEADERS += \
     dijkstrasocket.h \
-    dijkstraserver.h
+    dijkstraserver.h \
     grafo.h
