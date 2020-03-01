@@ -1,7 +1,10 @@
 #include "dijkstraserver.h"
 #include "dijkstrasocket.h"
 #include <QTextStream>
+#include <iostream>
 #include <QDebug>
+
+using namespace std;
 
 DijkstraServer::DijkstraServer(QObject *parent)
     :QTcpServer(parent)
@@ -21,7 +24,7 @@ void DijkstraServer::incomingConnection(qintptr handle)
 
     for (auto i : mSockets){
         QTextStream T(i);
-        T << "Server: Se ha conectado: " << handle;
+        T << "Server: Se ha conectado un cliente: ";
         i->flush();
     }
 
@@ -29,7 +32,14 @@ void DijkstraServer::incomingConnection(qintptr handle)
     {
         qDebug() << "DijkstraReadyRead";
         QTextStream T(S);
-        auto text = T.readAll();
+        QString text = T.readAll();
+        cout<<T.readAll().toStdString()<<endl;
+        if(text=="Dijkstra"){
+            qDebug()<<"se ejecuta";
+            text = "Ejecutando Dijkstra... \n f";
+        }else {
+            text = "Comando no reconocido";
+        }
 
         for (auto i : mSockets) {
             QTextStream K(i);
