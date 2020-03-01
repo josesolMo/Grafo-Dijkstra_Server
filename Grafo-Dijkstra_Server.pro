@@ -20,6 +20,7 @@ SOURCES += \
         main.cpp \
     dijkstrasocket.cpp \
     dijkstraserver.cpp
+    grafo.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,3 +32,4 @@ QMAKE_CXXFLAGS += -std=gnu++11
 HEADERS += \
     dijkstrasocket.h \
     dijkstraserver.h
+    grafo.h
