@@ -9,6 +9,7 @@ using namespace std;
 DijkstraServer::DijkstraServer(QObject *parent)
     :QTcpServer(parent)
 {
+     this->g = new Grafo();
 }
 
 bool DijkstraServer::startServer(quint16 port)
@@ -36,7 +37,8 @@ void DijkstraServer::incomingConnection(qintptr handle)
         cout<<T.readAll().toStdString()<<endl;
         if(text=="Dijkstra"){
             qDebug()<<"se ejecuta";
-            text = "Ejecutando Dijkstra... \n f";
+            text = g->dijkstra(this->G,1,5);
+            cout<<text.toStdString()<<endl;
         }else {
             text = "Comando no reconocido";
         }

@@ -1,29 +1,20 @@
 #ifndef GRAFO_H
 #define GRAFO_H
 
-#include <bits/stdc++.h>
+#include<iostream>
+#include<stdio.h>
+#include <QTextStream>
+
 using namespace std;
-
-# define INF 0x3f3f3f3f
-
-typedef pair<int, int> iPair;
+#define INFINITY 9999
+#define max 9
 
 class Grafo
 {
-    int V;    // No. of vertices
+public:
+    Grafo();  // Constructor
 
-        // In a weighted graph, we need to store vertex
-        // and weight pair for every edge
-        list< pair<int, int> > *adj;
-
-    public:
-        Grafo(int V);  // Constructor
-
-        // function to add an edge to graph
-        void addEdge(int u, int v, int w);
-
-        // prints shortest path from s
-        void shortestPath(int s);
+    QString dijkstra(int G[max][max],int startnode,int endnode);
 };
 
 #endif // GRAFO_H
