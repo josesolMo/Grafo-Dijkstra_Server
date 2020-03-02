@@ -1,3 +1,12 @@
+/**
+  * @file dijkstrasocket.h
+  * @title Dijkstra Socket
+  * @brief Extiende de QTcpSockety contiene la lógica para comunicar al cliente con la implementación del grafo
+  * @version 1.0
+  * @author JoseSol
+  * @date 02/03/2020
+  */
+
 #ifndef DIJKSTRASOCKET_H
 #define DIJKSTRASOCKET_H
 
