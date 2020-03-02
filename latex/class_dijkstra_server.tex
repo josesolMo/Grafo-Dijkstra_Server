@@ -1,0 +1,98 @@
+\hypertarget{class_dijkstra_server}{}\section{Referencia de la Clase Dijkstra\+Server}
+\label{class_dijkstra_server}\index{Dijkstra\+Server@{Dijkstra\+Server}}
+
+
+{\ttfamily \#include $<$dijkstraserver.\+h$>$}
+
+
+
+Diagrama de herencias de Dijkstra\+Server
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_dijkstra_server__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para Dijkstra\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_dijkstra_server__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dijkstra_server_a9c8106e2267967439928ef48b2a66660}{Dijkstra\+Server} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de \hyperlink{class_dijkstra_server}{Dijkstra\+Server}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_dijkstra_server_ad285a85f623398d6feffbfd138e4c76d}{start\+Server} (quint16 port)
+\begin{DoxyCompactList}\small\item\em Inicia el servidor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dijkstra_server_aab86d4d415a39981088e75a140cfd6d4}{incoming\+Connection} (qintptr handle)
+\begin{DoxyCompactList}\small\item\em Llamada por el servidor cuando hay una nueva conexión disponible, reimplementado de Q\+Tcp\+Server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_dijkstra_server_a9c8106e2267967439928ef48b2a66660}\label{class_dijkstra_server_a9c8106e2267967439928ef48b2a66660}} 
+\index{Dijkstra\+Server@{Dijkstra\+Server}!Dijkstra\+Server@{Dijkstra\+Server}}
+\index{Dijkstra\+Server@{Dijkstra\+Server}!Dijkstra\+Server@{Dijkstra\+Server}}
+\subsubsection{\texorpdfstring{Dijkstra\+Server()}{DijkstraServer()}}
+{\footnotesize\ttfamily Dijkstra\+Server\+::\+Dijkstra\+Server (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor de \hyperlink{class_dijkstra_server}{Dijkstra\+Server}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_dijkstra_server_aab86d4d415a39981088e75a140cfd6d4}\label{class_dijkstra_server_aab86d4d415a39981088e75a140cfd6d4}} 
+\index{Dijkstra\+Server@{Dijkstra\+Server}!incoming\+Connection@{incoming\+Connection}}
+\index{incoming\+Connection@{incoming\+Connection}!Dijkstra\+Server@{Dijkstra\+Server}}
+\subsubsection{\texorpdfstring{incoming\+Connection()}{incomingConnection()}}
+{\footnotesize\ttfamily void Dijkstra\+Server\+::incoming\+Connection (\begin{DoxyParamCaption}\item[{qintptr}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Llamada por el servidor cuando hay una nueva conexión disponible, reimplementado de Q\+Tcp\+Server. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em handle} & del socket que envia la señal \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dijkstra_server_ad285a85f623398d6feffbfd138e4c76d}\label{class_dijkstra_server_ad285a85f623398d6feffbfd138e4c76d}} 
+\index{Dijkstra\+Server@{Dijkstra\+Server}!start\+Server@{start\+Server}}
+\index{start\+Server@{start\+Server}!Dijkstra\+Server@{Dijkstra\+Server}}
+\subsubsection{\texorpdfstring{start\+Server()}{startServer()}}
+{\footnotesize\ttfamily bool Dijkstra\+Server\+::start\+Server (\begin{DoxyParamCaption}\item[{quint16}]{port }\end{DoxyParamCaption})}
+
+
+
+Inicia el servidor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Puerto} & en donde se desea iniciar el servidor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Booleano true si se logró iniciar el servidor, false si no se logró 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dijkstraserver_8h}{dijkstraserver.\+h}\item 
+\hyperlink{dijkstraserver_8cpp}{dijkstraserver.\+cpp}\end{DoxyCompactItemize}

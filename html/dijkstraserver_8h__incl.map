@@ -1,0 +1,4 @@
+<map id="dijkstraserver.h" name="dijkstraserver.h">
+<area shape="rect" id="node3" href="$dijkstrasocket_8h.html" title="Extiende de QTcpSockety contiene la lógica para comunicar al cliente con la implementación del grafo..." alt="" coords="122,80,237,107"/>
+<area shape="rect" id="node5" href="$grafo_8h.html" title="Contiene un grafo y la función Dijkstra. " alt="" coords="304,80,367,107"/>
+</map>

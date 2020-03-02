@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grafo-Dijkstra_Server: Fichero Fuente dijkstraserver.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Grafo-Dijkstra_Server
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo de la lógica del algoritmo dijkstra y envio al cliente</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dijkstraserver.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dijkstraserver_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef DIJKSTRASERVER_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define DIJKSTRASERVER_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QTcpServer&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dijkstrasocket_8h.html">dijkstrasocket.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grafo_8h.html">grafo.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_dijkstra_server.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dijkstra_server.html">DijkstraServer</a> : <span class="keyword">public</span> QTcpServer</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_dijkstra_server.html#a9c8106e2267967439928ef48b2a66660">DijkstraServer</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_dijkstra_server.html#ad285a85f623398d6feffbfd138e4c76d">startServer</a>(quint16 port);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_dijkstra_server.html#aab86d4d415a39981088e75a140cfd6d4">incomingConnection</a>(qintptr handle);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QList&lt;DijkstraSocket *&gt; mSockets;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_grafo.html">Grafo</a> *g;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // DIJKSTRASERVER_H</span></div><div class="ttc" id="grafo_8h_html"><div class="ttname"><a href="grafo_8h.html">grafo.h</a></div><div class="ttdoc">Contiene un grafo y la función Dijkstra. </div></div>
+<div class="ttc" id="class_dijkstra_server_html"><div class="ttname"><a href="class_dijkstra_server.html">DijkstraServer</a></div><div class="ttdef"><b>Definition:</b> dijkstraserver.h:17</div></div>
+<div class="ttc" id="class_dijkstra_server_html_aab86d4d415a39981088e75a140cfd6d4"><div class="ttname"><a href="class_dijkstra_server.html#aab86d4d415a39981088e75a140cfd6d4">DijkstraServer::incomingConnection</a></div><div class="ttdeci">void incomingConnection(qintptr handle)</div><div class="ttdoc">Llamada por el servidor cuando hay una nueva conexión disponible, reimplementado de QTcpServer...</div><div class="ttdef"><b>Definition:</b> dijkstraserver.cpp:20</div></div>
+<div class="ttc" id="class_dijkstra_server_html_a9c8106e2267967439928ef48b2a66660"><div class="ttname"><a href="class_dijkstra_server.html#a9c8106e2267967439928ef48b2a66660">DijkstraServer::DijkstraServer</a></div><div class="ttdeci">DijkstraServer(QObject *parent=nullptr)</div><div class="ttdoc">Constructor de DijkstraServer. </div><div class="ttdef"><b>Definition:</b> dijkstraserver.cpp:9</div></div>
+<div class="ttc" id="class_grafo_html"><div class="ttname"><a href="class_grafo.html">Grafo</a></div><div class="ttdef"><b>Definition:</b> grafo.h:20</div></div>
+<div class="ttc" id="class_dijkstra_server_html_ad285a85f623398d6feffbfd138e4c76d"><div class="ttname"><a href="class_dijkstra_server.html#ad285a85f623398d6feffbfd138e4c76d">DijkstraServer::startServer</a></div><div class="ttdeci">bool startServer(quint16 port)</div><div class="ttdoc">Inicia el servidor. </div><div class="ttdef"><b>Definition:</b> dijkstraserver.cpp:15</div></div>
+<div class="ttc" id="dijkstrasocket_8h_html"><div class="ttname"><a href="dijkstrasocket_8h.html">dijkstrasocket.h</a></div><div class="ttdoc">Extiende de QTcpSockety contiene la lógica para comunicar al cliente con la implementación del grafo...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

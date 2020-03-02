@@ -1,0 +1,5 @@
+<map id="dijkstraserver.cpp" name="dijkstraserver.cpp">
+<area shape="rect" id="node2" href="$dijkstraserver_8h.html" title="Extiende de QTcpServer y contiene la lógica para comunicar al cliente con la implementación del grafo..." alt="" coords="195,80,306,107"/>
+<area shape="rect" id="node4" href="$dijkstrasocket_8h.html" title="Extiende de QTcpSockety contiene la lógica para comunicar al cliente con la implementación del grafo..." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node6" href="$grafo_8h.html" title="Contiene un grafo y la función Dijkstra. " alt="" coords="195,155,258,181"/>
+</map>

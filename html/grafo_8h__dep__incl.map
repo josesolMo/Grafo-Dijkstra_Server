@@ -1,0 +1,6 @@
+<map id="grafo.h" name="grafo.h">
+<area shape="rect" id="node2" href="$dijkstraserver_8h.html" title="Extiende de QTcpServer y contiene la lógica para comunicar al cliente con la implementación del grafo..." alt="" coords="43,80,154,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="main.cpp" alt="" coords="155,155,229,181"/>
+<area shape="rect" id="node5" href="$grafo_8cpp.html" title="grafo.cpp" alt="" coords="230,80,306,107"/>
+<area shape="rect" id="node3" href="$dijkstraserver_8cpp.html" title="dijkstraserver.cpp" alt="" coords="5,155,131,181"/>
+</map>
