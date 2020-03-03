@@ -39,6 +39,10 @@ protected:
 private:
     QList<DijkstraSocket *> mSockets;
     Grafo *g;
+    bool flag1 = false;
+    bool flag2 =false;
+    bool flag3 =false;
+    int n1,n2;
 };
 
 #endif // DIJKSTRASERVER_H
